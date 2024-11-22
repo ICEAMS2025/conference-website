@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header with Image Carousel -->
     <header>
-        <div class="logo-container">
-            <img src="iith.png" alt="IIT Hyderabad Logo" class="logo">
-            <h1>1st INTERNATIONAL CONFERENCE & EXHIBITION ON ADVANCED MATERIALS AND STRUCTURES (ICEAMS-2025)</h1>
-            <img src="isampe.png" alt="ISAMPE Logo" class="logo">
+        <div class="carousel">
+            <img src="image1.jpg" alt="Image 1" class="carousel-image active">
+            <img src="image2.jpg" alt="Image 2" class="carousel-image">
+            <img src="image3.jpg" alt="Image 3" class="carousel-image">
+            <img src="image4.jpg" alt="Image 4" class="carousel-image">
+            <img src="image5.jpg" alt="Image 5" class="carousel-image">
         </div>
-        <p>2nd to 5th July 2025, Hyderabad, Telangana, India</p>
-        <p><strong>Organized by:</strong> ISAMPE Hyderabad Chapter & IIT Hyderabad</p>
+        <div class="header-text">
+            <h1>1st INTERNATIONAL CONFERENCE & EXHIBITION ON ADVANCED MATERIALS AND STRUCTURES (ICEAMS-2025)</h1>
+            <p>2nd to 5th July 2025, Hyderabad, Telangana, India</p>
+            <p><strong>Organized by:</strong> ISAMPE Hyderabad Chapter & IIT Hyderabad</p>
+        </div>
     </header>
 
-    <section id="theme">
+    <!-- Conference Sections -->
+    <section class="fade-in" id="theme">
         <h2>Theme of the Conference</h2>
         <p><strong>"Advanced Materials and Structures – Innovations, Technologies and Way Forward"</strong></p>
-        <img src="image1.jpg" alt="Conference Theme Image" class="section-image">
     </section>
 
-    <section id="areas-of-focus">
+    <section class="slide-in" id="areas-of-focus">
         <h2>Areas of Focus</h2>
         <ul>
             <li>Advanced materials including super alloys, advanced composites (PMC, MMC, CMC, C-C-C), high-temperature coatings, energy materials & devices, sensors, lightweighting, high entropy alloys, superalloys, steel & concrete.</li>
@@ -34,16 +40,14 @@
             <li>Application of AI & ML in materials, design, manufacturing, and testing.</li>
             <li>Applications in aerospace, defence, automotive, infrastructure, and other industrial sectors.</li>
         </ul>
-        <img src="image2.jpg" alt="Materials Image" class="section-image">
     </section>
 
-    <section id="call-for-papers">
+    <section class="fade-in" id="call-for-papers">
         <h2>Call for Papers</h2>
         <p>Authors desirous of presenting papers are requested to electronically upload their abstracts (in not more than 300 words) of their original research work as well as review papers written in English by email to: <a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a>.</p>
-        <img src="image3.jpg" alt="Call for Papers Image" class="section-image">
     </section>
 
-    <section id="important-dates">
+    <section class="slide-in" id="important-dates">
         <h2>Important Dates</h2>
         <ul>
             <li><strong>Abstract Submission Deadline:</strong> December 15, 2024</li>
@@ -51,32 +55,30 @@
             <li><strong>Final Paper Submission:</strong> February 28, 2025</li>
             <li><strong>Acceptance of Paper:</strong> May 15, 2025</li>
         </ul>
-        <img src="image4.jpg" alt="Important Dates Image" class="section-image">
     </section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>For conference-related inquiries, please contact: <a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a></p>
-        <p>Look for updates on the conference website (to be launched soon).</p>
-        <img src="image5.jpg" alt="Contact Information Image" class="section-image">
-    </section>
-
-    <!-- Image Gallery Section -->
-    <section id="gallery">
-        <h2>Conference Highlights</h2>
-        <div class="image-gallery">
-            <img src="image6.jpg" alt="Gallery Image 1">
-            <img src="image7.jpg" alt="Gallery Image 2">
-            <img src="image8.jpg" alt="Gallery Image 3">
-            <img src="image9.jpg" alt="Gallery Image 4">
-            <img src="image10.jpg" alt="Gallery Image 5">
+    <!-- Organizers Section -->
+    <section id="organizers">
+        <h2>Organizers</h2>
+        <div class="organizer-container">
+            <div class="organizer">
+                <img src="organizer1.jpg" alt="Organizer 1">
+                <p>B V Papa Rao</p>
+                <p>Distinguished Scientist</p>
+            </div>
+            <div class="organizer">
+                <img src="organizer2.jpg" alt="Organizer 2">
+                <p>Suhash Ranjan Dey</p>
+                <p>Professor, IIT Hyderabad</p>
+            </div>
+            <!-- Add three more organizers -->
         </div>
     </section>
 
     <footer>
-        <p>With best wishes,</p>
-        <p>B V Papa Rao - <em>Distinguished Scientist, Chairman, ISAMPE Hyderabad Chapter</em></p>
-        <p>Suhash Ranjan Dey - <em>Professor, Indian Institute of Technology Hyderabad</em></p>
+        <p>With best wishes,<br>ISAMPE Hyderabad Chapter & IIT Hyderabad</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
