@@ -7,53 +7,76 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Image Carousel -->
+    <!-- Header with Logos -->
     <header>
-        <div class="carousel">
-            <img src="image1.jpg" alt="Image 1" class="carousel-image active">
-            <img src="image2.jpg" alt="Image 2" class="carousel-image">
-            <img src="image3.jpg" alt="Image 3" class="carousel-image">
-            <img src="image4.jpg" alt="Image 4" class="carousel-image">
-            <img src="image5.jpg" alt="Image 5" class="carousel-image">
-        </div>
-        <div class="header-text">
-            <h1>1st INTERNATIONAL CONFERENCE & EXHIBITION ON ADVANCED MATERIALS AND STRUCTURES (ICEAMS-2025)</h1>
-            <p>2nd to 5th July 2025, Hyderabad, Telangana, India</p>
-            <p><strong>Organized by:</strong> ISAMPE Hyderabad Chapter & IIT Hyderabad</p>
+        <div class="header-container">
+            <img src="iith.png" alt="IIT Hyderabad Logo" class="logo">
+            <h1>ICEAMS-2025</h1>
+            <img src="isampe.png" alt="ISAMPE Logo" class="logo">
         </div>
     </header>
 
-    <!-- Areas of Focus Section with Background Carousel -->
-    <section id="areas-of-focus">
+    <!-- Tabbed Sections -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'focus')">Areas of Focus</button>
+        <button class="tab-button" onclick="openTab(event, 'papers')">Call for Papers</button>
+        <button class="tab-button" onclick="openTab(event, 'dates')">Important Dates</button>
+        <button class="tab-button" onclick="openTab(event, 'organizers')">Organizers</button>
+        <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
+    </div>
+
+    <!-- Areas of Focus Section -->
+    <section id="focus" class="tab-content active">
         <div class="focus-carousel">
             <button class="arrow left-arrow">&lt;</button>
             <div class="focus-content">
                 <h2>Areas of Focus</h2>
-                <p id="focus-text">Advanced materials including super alloys, advanced composites (PMC, MMC, CMC, C-C-C), high-temperature coatings, energy materials & devices, sensors, lightweighting, high entropy alloys, superalloys, steel & concrete.</p>
+                <p id="focus-text">Advanced materials including super alloys, advanced composites, and more.</p>
             </div>
             <button class="arrow right-arrow">&gt;</button>
         </div>
     </section>
 
-    <!-- Organizers Section with Carousel -->
-    <section id="organizers">
+    <!-- Call for Papers Section -->
+    <section id="papers" class="tab-content">
+        <h2>Call for Papers</h2>
+        <p>Authors desirous of presenting papers are requested to submit abstracts (in not more than 300 words) to: <a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a></p>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section id="dates" class="tab-content">
+        <h2>Important Dates</h2>
+        <ul>
+            <li>Abstract Submission Deadline: December 15, 2024</li>
+            <li>Notification of Acceptance: December 31, 2024</li>
+            <li>Final Paper Submission: February 28, 2025</li>
+            <li>Acceptance of Paper: May 15, 2025</li>
+        </ul>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="tab-content">
         <h2>Organizers</h2>
-        <div class="organizer-carousel">
-            <div class="organizer active">
-                <img src="organizer1.jpg" alt="Organizer 1">
-                <p>B V Papa Rao<br><em>Distinguished Scientist</em></p>
+        <div class="organizer-container">
+            <div class="organizer">
+                <img src="organizer1.jpg" alt="Organizer 1" onclick="location.href='#';"> <!-- Add LinkedIn URL in href -->
+                <p>Organizer 1<br><em>Destination 1</em></p> <!-- Add destination details -->
             </div>
             <div class="organizer">
-                <img src="organizer2.jpg" alt="Organizer 2">
-                <p>Suhash Ranjan Dey<br><em>Professor, IIT Hyderabad</em></p>
+                <img src="organizer2.jpg" alt="Organizer 2" onclick="location.href='#';"> <!-- Add LinkedIn URL in href -->
+                <p>Organizer 2<br><em>Destination 2</em></p> <!-- Add destination details -->
             </div>
-            <!-- Add four more organizers similarly -->
+            <!-- Add 4 more organizers similarly -->
         </div>
     </section>
 
-    <footer>
-        <p>With best wishes,<br>ISAMPE Hyderabad Chapter & IIT Hyderabad</p>
-    </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="tab-content">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a></p>
+        <p>Venue: IIT Hyderabad, Kandi, Telangana, India</p>
+        <p>Look for updates on the conference website (to be launched soon).</p>
+    </section>
 
     <script src="script.js"></script>
 </body>
