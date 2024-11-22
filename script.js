@@ -21,21 +21,10 @@ const focusTexts = [
     "Applications in aerospace, defence, automotive, infrastructure, and other industrial sectors."
 ];
 
-const focusSection = document.getElementById('focus-text');
+const focusSection = document.getElementById('focus');
+const focusTextElement = document.getElementById('focus-text');
 let focusIndex = 0;
 
-function updateFocusText() {
-    focusSection.textContent = focusTexts[focusIndex];
-}
-
-function prevFocus() {
-    focusIndex = (focusIndex - 1 + focusTexts.length) % focusTexts.length;
-    updateFocusText();
-}
-
-function nextFocus() {
-    focusIndex = (focusIndex + 1) % focusTexts.length;
-    updateFocusText();
-}
-
-updateFocusText(); // Initialize first text
+function updateFocusContent() {
+    focusTextElement.textContent = focusTexts[focusIndex];
+    focusSection
