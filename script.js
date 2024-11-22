@@ -27,4 +27,4 @@ let focusIndex = 0;
 
 function updateFocusContent() {
     focusTextElement.textContent = focusTexts[focusIndex];
-    focusSection
+    focusSection.style.backgroundImage = url('focus${focusIndex + 1}.jpg'); // Make sure to have images named focus
