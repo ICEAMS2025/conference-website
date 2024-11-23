@@ -13,9 +13,10 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: url('header-background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Add the header background image */
     position: relative;
-    padding: 40px 0; /* Reduced padding to fit the content */
+    padding: 50px 0; /* Adjusted padding for the header */
 }
 
 .header-logos {
@@ -37,11 +38,11 @@ header {
 }
 
 h1 {
-    font-size: 1.8rem; /* Adjust font size to fit */
+    font-size: 2.5rem; /* Increased font size */
     color: #fff;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     line-height: 1.4;
-    margin-top: 120px;
+    margin-top: 150px; /* Added margin to push the title down */
     word-wrap: break-word; /* Ensures long text breaks into new lines */
     max-width: 90%; /* Ensures the title doesn't overflow */
     margin-left: auto;
