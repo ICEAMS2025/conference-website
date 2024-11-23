@@ -29,12 +29,17 @@ header p {
     padding: 60px 20px;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    margin: 20px auto;
+    margin: 50px auto;
     border-radius: 10px;
     width: 80%;
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(50px);  /* Initial position off-screen */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);  /* Float-in to normal position */
 }
 
 h2 {
