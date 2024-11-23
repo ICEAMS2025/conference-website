@@ -4,6 +4,7 @@ body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
+    overflow-x: hidden;
 }
 
 header {
@@ -33,13 +34,13 @@ header p {
     border-radius: 10px;
     width: 80%;
     opacity: 0;
-    transform: translateY(50px);  /* Start off-screen */
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(60px);  /* Initial downward offset */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 
 .section.visible {
     opacity: 1;
-    transform: translateY(0);  /* Float-in to normal position */
+    transform: translateY(0);  /* Float to the normal position */
 }
 
 h2 {
