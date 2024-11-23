@@ -10,23 +10,24 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     height: 100vh;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     background: rgba(0, 0, 0, 0.7);
 }
 
-header h1 {
-    font-size: 3rem;
-    margin: 0;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-header p {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+.header-logo {
+    width: 100px;
+    height: auto;
 }
 
 /* Section Styles */
@@ -73,10 +74,23 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Organizers Section */
-#organizers p {
-    margin: 10px 0;
-    font-size: 1.2rem;
+/* Sponsors Section */
+.sponsor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sponsor {
+    text-align: center;
+    width: 200px;
+}
+
+.sponsor img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 footer {
