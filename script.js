@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const logos = document.querySelectorAll('.logos img');
+    const sections = document.querySelectorAll('.section');
+
     const observerOptions = {
+        root: null,
+        rootMargin: '0px',
         threshold: 0.2,
     };
 
@@ -14,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    logos.forEach(logo => {
-        observer.observe(logo);
+    sections.forEach(section => {
+        observer.observe(section);
     });
 });
