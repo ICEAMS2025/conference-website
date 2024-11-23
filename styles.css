@@ -12,32 +12,40 @@ body {
 
 /* Header Styles */
 header {
-    height: 100vh;
     text-align: center;
-    padding-top: 100px;
     background: rgba(0, 0, 0, 0.7);
     position: relative;
+    padding: 40px 0; /* Reduced padding to fit the content */
 }
 
 .header-logos {
-    position: absolute;
-    top: 20px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    width: 90%; /* Ensures that logos stay within the bounds */
 }
 
-.left-logo {
-    position: absolute;
-    left: 5%;  /* Start logo at 5% from left */
-    max-width: 120px;  /* Adjust to fit the logo */
+.header-logo {
+    height: 100px; /* Make both logos have the same height */
+    width: auto;
+    border: 3px solid #fff; /* Adding border around logos */
+    padding: 5px;
 }
 
-.right-logo {
-    position: absolute;
-    right: 5%;  /* Start logo at 5% from right */
-    max-width: 120px;  /* Adjust to fit the logo */
+h1 {
+    font-size: 1.8rem; /* Adjust font size to fit */
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    line-height: 1.4;
+    margin-top: 120px;
+    word-wrap: break-word; /* Ensures long text breaks into new lines */
+    max-width: 90%; /* Ensures the title doesn't overflow */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Section Styles */
