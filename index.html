@@ -3,83 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICEAMS-2025 Conference</title>
+    <title>ICEAMS 2025</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Logos -->
     <header>
-        <div class="header-container">
-            <img src="iith.png" alt="IIT Hyderabad Logo" class="logo">
-            <h1>ICEAMS-2025</h1>
-            <img src="isampe.png" alt="ISAMPE Logo" class="logo">
-        </div>
+        <h1>ICEAMS 2025</h1>
+        <p>2nd to 5th July 2025 | IIT Hyderabad</p>
     </header>
 
-    <!-- Tab Navigation -->
-    <div class="tabs">
-        <button class="tab-button active" onclick="openTab(event, 'focus')">Areas of Focus</button>
-        <button class="tab-button" onclick="openTab(event, 'papers')">Call for Papers</button>
-        <button class="tab-button" onclick="openTab(event, 'dates')">Important Dates</button>
-        <button class="tab-button" onclick="openTab(event, 'organizers')">Organizers</button>
-        <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
-    </div>
+    <section class="section" id="about">
+        <h2>About the Conference</h2>
+        <p>"Advanced Materials and Structures – Innovations, Technologies and Way Forward"</p>
+        <p>Organized by ISAMPE Hyderabad Chapter & IIT Hyderabad.</p>
+    </section>
 
-    <!-- Areas of Focus Section with Background Images -->
-    <section id="focus" class="tab-content active">
-        <div class="focus-carousel">
-            <button class="arrow left-arrow" onclick="prevFocus()">&#9664;</button>
-            <div class="focus-content">
-                <h2>Areas of Focus</h2>
-                <p id="focus-text"></p>
-            </div>
-            <button class="arrow right-arrow" onclick="nextFocus()">&#9654;</button>
+    <section class="section sponsor-section" id="sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="logos">
+            <img src="sponsor1.png" alt="Sponsor 1" class="fly-in">
+            <img src="sponsor2.png" alt="Sponsor 2" class="fly-in">
+            <img src="sponsor3.png" alt="Sponsor 3" class="fly-in">
         </div>
     </section>
 
-    <!-- Call for Papers Section -->
-    <section id="papers" class="tab-content">
+    <section class="section" id="call-for-papers">
         <h2>Call for Papers</h2>
-        <p>Authors desirous of presenting papers are requested to submit abstracts (in not more than 300 words) to:</p>
-        <p><a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a></p>
-        <p>Review papers and original research works written in English are welcome.</p>
-    </section>
-
-    <!-- Important Dates Section -->
-    <section id="dates" class="tab-content">
-        <h2>Important Dates</h2>
-        <ul>
-            <li><strong>Abstract Submission Deadline:</strong> December 15, 2024</li>
-            <li><strong>Notification of Acceptance:</strong> December 31, 2024</li>
-            <li><strong>Final Paper Submission:</strong> February 28, 2025</li>
-            <li><strong>Acceptance of Paper:</strong> May 15, 2025</li>
-        </ul>
-    </section>
-
-    <!-- Organizers Section -->
-    <section id="organizers" class="tab-content">
-        <h2>Organizers</h2>
-        <div class="organizer-container">
-            <div class="organizer">
-                <img src="organizer1.jpg" alt="Organizer 1" onclick="location.href='#';"> <!-- Add LinkedIn URL -->
-                <p>Organizer 1<br><em>Destination 1</em></p> <!-- Add organizer details -->
-            </div>
-            <div class="organizer">
-                <img src="organizer2.jpg" alt="Organizer 2" onclick="location.href='#';"> <!-- Add LinkedIn URL -->
-                <p>Organizer 2<br><em>Destination 2</em></p> <!-- Add organizer details -->
-            </div>
-            <!-- Add more organizers as needed -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="tab-content">
-        <h2>Contact Information</h2>
+        <p>Submit your abstract by <strong>December 15, 2024</strong>.</p>
         <p>Email: <a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a></p>
-        <p>Venue: IIT Hyderabad, Kandi, Telangana, India</p>
-        <p>Look for updates on the conference website (to be launched soon).</p>
     </section>
 
-    <script src="script.js"></script>
+    <footer class="section">
+        <p>Contact: <a href="mailto:iceams2025@gmail.com">iceams2025@gmail.com</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
