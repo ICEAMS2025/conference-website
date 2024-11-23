@@ -28,9 +28,16 @@ header {
     padding: 0 20px;
 }
 
-.header-logo {
-    width: 100px;
-    height: auto;
+.left-logo {
+    position: absolute;
+    left: 5%;  /* Start logo at 5% from left */
+    max-width: 120px;  /* Adjust to fit the logo */
+}
+
+.right-logo {
+    position: absolute;
+    right: 5%;  /* Start logo at 5% from right */
+    max-width: 120px;  /* Adjust to fit the logo */
 }
 
 /* Section Styles */
