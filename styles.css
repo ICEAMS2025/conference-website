@@ -33,7 +33,7 @@ header p {
     border-radius: 10px;
     width: 80%;
     opacity: 0;
-    transform: translateY(50px);  /* Initial position off-screen */
+    transform: translateY(50px);  /* Start off-screen */
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
