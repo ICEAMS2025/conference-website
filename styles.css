@@ -107,9 +107,17 @@ a:hover {
 }
 
 .sponsor img {
-    width: 150px;
-    height: auto;
+    height: 100px; /* Ensure all logos are the same height */
+    width: auto; /* Adjust width based on height to maintain aspect ratio */
     margin-bottom: 10px;
+}
+
+/* Event Details Section */
+#conference-details h2 {
+    font-size: 2.5rem;
+    color: #00d1ff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 footer {
