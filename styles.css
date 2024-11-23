@@ -33,14 +33,6 @@ header p {
     margin: 50px auto;
     border-radius: 10px;
     width: 80%;
-    opacity: 0;
-    transform: translateY(60px);  /* Initial downward offset */
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);  /* Float to the normal position */
 }
 
 h2 {
