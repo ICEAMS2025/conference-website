@@ -1,17 +1,20 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
+    background-color: #121212;  /* Fallback color */
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 header {
     height: 100vh;
     text-align: center;
     padding-top: 200px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 header h1 {
@@ -26,21 +29,40 @@ header p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+/* Section Styles */
 .section {
     padding: 60px 20px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     margin: 50px auto;
     border-radius: 10px;
     width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
     font-size: 2.5rem;
     color: #00d1ff;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
+p, li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
 a {
     color: #00d1ff;
     text-decoration: none;
@@ -51,12 +73,15 @@ a:hover {
     text-decoration: underline;
 }
 
-.logos img {
-    width: 150px;
-    margin: 20px;
+/* Organizers Section */
+#organizers p {
+    margin: 10px 0;
+    font-size: 1.2rem;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
 }
