@@ -4,19 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2,  // Trigger when 20% of the section is visible
+        threshold: 0.2  // Trigger when 20% of the section is visible
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');  // Add visible class
-                observer.unobserve(entry.target);  // Stop observing once visible
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');  // Optional: Remove class when out of view
             }
         });
     }, observerOptions);
 
     sections.forEach(section => {
-        observer.observe(section);  // Observe each section
+        observer.observe(section);
     });
 });
