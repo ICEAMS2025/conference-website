@@ -14,9 +14,9 @@ body {
 header {
     text-align: center;
     background: url('header-background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; /* Add the header background image */
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0; /* Adjusted padding for the header */
 }
 
 .header-logos {
@@ -27,24 +27,26 @@ header {
     top: 20px;
     left: 5%;
     right: 5%;
-    width: 90%;
+    width: 90%; /* Ensures that logos stay within the bounds */
 }
 
 .header-logo {
-    max-height: 100px; /* Ensures logos maintain the same size */
-    width: auto;
-    border: 3px solid #fff;
+    height: auto;
+    width: 100px; /* Adjust the width of the logos */
+    max-width: 100%; /* Prevent logos from becoming too large */
+    object-fit: contain; /* Ensure the logos scale without distorting */
+    border: 3px solid #fff; /* Adding border around logos */
     padding: 5px;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Increased font size */
     color: #fff;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     line-height: 1.4;
-    margin-top: 150px;
-    word-wrap: break-word;
-    max-width: 90%;
+    margin-top: 150px; /* Added margin to push the title down */
+    word-wrap: break-word; /* Ensures long text breaks into new lines */
+    max-width: 90%; /* Ensures the title doesn't overflow */
     margin-left: auto;
     margin-right: auto;
 }
@@ -98,17 +100,20 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 30px;  /* Provides space between the sponsor logos */
 }
 
 .sponsor {
     text-align: center;
-    width: 200px;
+    width: 200px; /* Set a width for the sponsor box */
+    flex-shrink: 0;  /* Prevent the sponsor boxes from shrinking */
 }
 
 .sponsor img {
-    max-height: 100px;
-    width: auto;
+    max-width: 100%;
+    height: auto;  /* Maintain aspect ratio */
+    width: 150px; /* Adjust width of the logos */
+    object-fit: contain; /* Ensure the logo fits the space without distortion */
     margin-bottom: 10px;
 }
 
@@ -129,30 +134,28 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .header-logos {
-        flex-direction: column;
-        align-items: center;
+    .header-logo {
+        width: 80px;  /* Adjust logo size for smaller screens */
     }
 
-    h1 {
-        font-size: 2rem;
-        margin-top: 100px;
-    }
-
-    .section {
-        width: 90%;
-        padding: 40px 10px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
+    .sponsor {
+        width: 150px; /* Reduce width of sponsor logos */
     }
 
     .sponsor img {
-        max-height: 80px;
+        width: 100px; /* Adjust the size of sponsor images */
     }
 
-    footer {
-        font-size: 0.9rem;
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    }
+
+    .section {
+        width: 90%;  /* Ensure sections take up more space on small screens */
+        padding: 30px 10px;  /* Adjust padding */
+    }
+
+    h2 {
+        font-size: 2rem;  /* Adjust section headings size */
     }
 }
