@@ -19,41 +19,42 @@ header {
     padding: 50px 0;
 }
 
+/* Logo Section */
 .header-logos {
     display: flex;
-    justify-content: space-between; /* Push logos to edges */
-    align-items: center; /* Vertically align logos */
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    top: 20px; /* Space from top border */
+    top: 20px;
     left: 5%;
     right: 5%;
-    width: 90%; /* Keep logos within bounds */
+    width: 90%;
 }
 
 .header-logo {
-    height: 120px; /* Set consistent height for logos */
-    width: auto; /* Maintain aspect ratio */
-    max-width: 150px; /* Limit maximum width */
-    object-fit: contain; /* Prevent distortion */
-    border: 3px solid #fff; /* White border around logos */
-    padding: 5px; /* Add padding inside border */
-    box-sizing: border-box; /* Ensure padding and border are included in size */
+    height: 120px; /* Uniform logo height */
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    border: 3px solid #fff;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-/* Title (h1) Styles */
+/* Title Styling */
 h1 {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     color: #fff;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     line-height: 1.4;
-    margin-top: 160px; /* Push title below logos */
+    margin-top: 160px;
     word-wrap: break-word;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Section Styles */
+/* Section Styling */
 .section {
     padding: 60px 20px;
     text-align: center;
@@ -86,7 +87,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Links */
+/* Links Styling */
 a {
     color: #00d1ff;
     text-decoration: none;
@@ -108,14 +109,14 @@ a:hover {
 
 .sponsor {
     text-align: center;
-    width: 200px; /* Fixed width for sponsor container */
-    flex-shrink: 0; /* Prevent shrinking */
+    width: 200px;
+    flex-shrink: 0;
 }
 
 .sponsor img {
-    max-width: 100%; /* Ensure responsiveness */
+    max-width: 100%;
     height: auto;
-    width: 150px; /* Fixed size for sponsor logos */
+    width: 150px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -128,36 +129,69 @@ footer {
     font-size: 1rem;
 }
 
-/* Mobile Responsiveness */
+/* Responsive Design for Mobile Devices */
 @media (max-width: 768px) {
-    .header-logo {
-        height: 90px; /* Adjust logo size for smaller screens */
-    }
-
     .header-logos {
-        flex-direction: column; /* Stack logos vertically on smaller screens */
+        flex-direction: column; /* Stack logos vertically */
         top: 10px;
     }
 
+    .header-logo {
+        height: 90px;
+        margin-bottom: 10px; /* Add space between stacked logos */
+    }
+
     h1 {
-        font-size: 1.8rem; /* Adjust title size */
-        margin-top: 140px; /* Re-align title spacing */
-    }
-
-    .sponsor {
-        width: 150px; /* Reduce width of sponsor boxes */
-    }
-
-    .sponsor img {
-        width: 100px; /* Adjust sponsor logo size */
+        font-size: 1.8rem;
+        margin-top: 140px;
     }
 
     .section {
-        width: 90%; /* Use more horizontal space on small screens */
+        width: 90%;
         padding: 30px 10px;
     }
 
     h2 {
-        font-size: 2rem; /* Adjust headings for small screens */
+        font-size: 2rem;
+    }
+
+    .sponsor {
+        width: 150px;
+    }
+
+    .sponsor img {
+        width: 100px;
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller title font size */
+        margin-top: 120px;
+    }
+
+    .section {
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p, li {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    .header-logo {
+        height: 70px;
+    }
+
+    .sponsor {
+        width: 120px;
+    }
+
+    .sponsor img {
+        width: 80px;
     }
 }
