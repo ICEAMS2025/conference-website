@@ -1,197 +1,88 @@
-/* General Styles */
-body {
+/* Reset styles */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    background-color: #121212; /* Fallback color */
-    overflow-x: hidden;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Body and text styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
 header {
     text-align: center;
-    background: url('header-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    padding: 50px 0;
+    margin-bottom: 30px;
 }
 
-/* Logo Section */
 .header-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
+    margin-bottom: 10px;
 }
 
 .header-logo {
-    height: 120px; /* Uniform logo height */
+    height: 50px;
     width: auto;
-    max-width: 150px;
-    object-fit: contain;
-    border: 3px solid #fff;
-    padding: 5px;
-    box-sizing: border-box;
 }
 
-/* Title Styling */
-h1 {
-    font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    line-height: 1.4;
-    margin-top: 160px;
-    word-wrap: break-word;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Section Styling */
+/* Section styles */
 .section {
-    padding: 60px 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 50px auto;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    font-size: 2.5rem;
-    color: #00d1ff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-p, li {
-    font-size: 1.1rem;
+.section h2 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
 }
 
 ul li {
     margin-bottom: 10px;
 }
 
-/* Links Styling */
-a {
-    color: #00d1ff;
-    text-decoration: none;
+/* Countdown timer styles */
+#countdown-timer {
+    font-size: 1.25rem;
+    margin-top: 20px;
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-/* Sponsors Section */
+/* Sponsor Section */
 .sponsor-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.sponsor {
-    text-align: center;
-    width: 200px;
-    flex-shrink: 0;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .sponsor img {
-    max-width: 100%;
-    height: auto;
-    width: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
+    height: 60px;
+    width: auto;
 }
 
-/* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px 0;
     text-align: center;
-    font-size: 1rem;
-}
-
-/* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
-    .header-logos {
-        flex-direction: column; /* Stack logos vertically */
-        top: 10px;
-    }
-
-    .header-logo {
-        height: 90px;
-        margin-bottom: 10px; /* Add space between stacked logos */
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        margin-top: 140px;
-    }
-
-    .section {
-        width: 90%;
-        padding: 30px 10px;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .sponsor {
-        width: 150px;
-    }
-
-    .sponsor img {
-        width: 100px;
-    }
-}
-
-/* Responsive Design for Small Screens */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; /* Smaller title font size */
-        margin-top: 120px;
-    }
-
-    .section {
-        padding: 20px 10px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p, li {
-        font-size: 1rem; /* Adjust text size */
-    }
-
-    .header-logo {
-        height: 70px;
-    }
-
-    .sponsor {
-        width: 120px;
-    }
-
-    .sponsor img {
-        width: 80px;
-    }
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
 }
