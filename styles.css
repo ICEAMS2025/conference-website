@@ -27,11 +27,11 @@ body {
 }
 
 .countdown-box {
-    padding: 10px;
-    border: 2px solid #00d1ff;
-    border-radius: 10px;
+    padding: 15px;
+    border: 3px solid #00d1ff;
+    border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.8);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #00d1ff;
 }
