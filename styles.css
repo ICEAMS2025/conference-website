@@ -10,10 +10,29 @@ body {
     line-height: 1.6;
 }
 
+/* Header Logos */
+.header-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    height: 80px; /* Uniform height for both logos */
+    object-fit: contain;
+}
+
+/* Highlight Important Dates */
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
 /* Countdown Section */
 .countdown-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     font-size: 1.5rem;
@@ -27,153 +46,18 @@ body {
 }
 
 .countdown-box {
-    padding: 15px;
-    border: 3px solid #00d1ff;
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 2rem;
-    font-weight: bold;
-    color: #00d1ff;
-}
-
-/* Section Styling */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 50px auto;
+    padding: 10px;
+    border: 2px solid #00d1ff;
     border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-    font-size: 2.5rem;
-    color: #00d1ff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-p, li {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Links Styling */
-a {
-    color: #00d1ff;
-    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #00d1ff;
 }
 
-a:hover {
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-/* Sponsors Section */
-.sponsor-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.sponsor {
-    text-align: center;
-    width: 200px;
-    flex-shrink: 0;
-}
-
-.sponsor img {
-    max-width: 100%;
-    height: auto;
-    width: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1rem;
-}
-
-/* Responsive Design for Mobile Devices */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .header-logos {
-        flex-direction: column; /* Stack logos vertically */
-        top: 10px;
-    }
-
     .header-logo {
-        height: 90px;
-        margin-bottom: 10px; /* Add space between stacked logos */
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        margin-top: 140px;
-    }
-
-    .section {
-        width: 90%;
-        padding: 30px 10px;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .sponsor {
-        width: 150px;
-    }
-
-    .sponsor img {
-        width: 100px;
-    }
-}
-
-/* Responsive Design for Small Screens */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; /* Smaller title font size */
-        margin-top: 120px;
-    }
-
-    .section {
-        padding: 20px 10px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p, li {
-        font-size: 1rem; /* Adjust text size */
-    }
-
-    .header-logo {
-        height: 70px;
-    }
-
-    .sponsor {
-        width: 120px;
-    }
-
-    .sponsor img {
-        width: 80px;
+        height: 60px; /* Adjusted height for smaller screens */
     }
 }
