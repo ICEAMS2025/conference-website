@@ -8,29 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);       // Stop observing once visible
             }
         });
-    }, {
-        root: null,
-        threshold: 0.1  // Trigger when 10% of the section is visible
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => {
+        observer.observe(section);
     });
 
-    sections.forEach(section => observer.observe(section));
-
-    // Countdown Timer
-    const countdownDate = new Date("Jan 15, 2025 00:00:00").getTime();
-    const countdown = setInterval(function() {
-        const now = new Date().getTime();
-        const timeLeft = countdownDate - now;
+    // Countdown Timer Script
+    const countdownDays = document.getElementById('countdown-days');
+    const countdownHours = document.getElementById('countdown-hours');
+    
+    function updateCountdown() {
+        const now = new Date();
+        const deadline = new Date('2025-01-15');  // Replace with actual submission deadline
+        const timeRemaining = deadline - now;
         
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        
-        document.getElementById("countdown-days").textContent = `Days: ${days}`;
-        document.getElementById("countdown-hours").textContent = `Hours: ${hours}`;
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-        if (timeLeft < 0) {
-            clearInterval(countdown);
-            document.getElementById("countdown-timer").innerHTML = "Abstract Submission Closed";
-        }
-    }, 1000);
+        countdownDays.textContent = `[Days]: ${days}`;
+        countdownHours.textContent = `[Hours]: ${hours}`;
+    }
+    
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
 });
-
