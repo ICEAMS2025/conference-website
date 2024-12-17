@@ -5,7 +5,7 @@ body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    background-color: #121212;  /* Fallback color */
+    background-color: #121212; /* Fallback color */
     overflow-x: hidden;
     line-height: 1.6;
 }
@@ -14,39 +14,41 @@ body {
 header {
     text-align: center;
     background: url('header-background.jpg') no-repeat center center fixed;
-    background-size: cover; /* Add the header background image */
+    background-size: cover;
     position: relative;
-    padding: 50px 0; /* Adjusted padding for the header */
+    padding: 50px 0;
 }
 
 .header-logos {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Push logos to edges */
+    align-items: center; /* Vertically align logos */
     position: absolute;
-    top: 20px;
+    top: 20px; /* Space from top border */
     left: 5%;
     right: 5%;
-    width: 90%; /* Ensures that logos stay within the bounds */
+    width: 90%; /* Keep logos within bounds */
 }
 
 .header-logo {
-    height: auto;
-    width: 100px; /* Adjust the width of the logos */
-    max-width: 100%; /* Prevent logos from becoming too large */
-    object-fit: contain; /* Ensure the logos scale without distorting */
-    border: 3px solid #fff; /* Adding border around logos */
-    padding: 5px;
+    height: 120px; /* Set consistent height for logos */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Limit maximum width */
+    object-fit: contain; /* Prevent distortion */
+    border: 3px solid #fff; /* White border around logos */
+    padding: 5px; /* Add padding inside border */
+    box-sizing: border-box; /* Ensure padding and border are included in size */
 }
 
+/* Title (h1) Styles */
 h1 {
     font-size: 2.5rem; /* Increased font size */
     color: #fff;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     line-height: 1.4;
-    margin-top: 150px; /* Added margin to push the title down */
-    word-wrap: break-word; /* Ensures long text breaks into new lines */
-    max-width: 90%; /* Ensures the title doesn't overflow */
+    margin-top: 160px; /* Push title below logos */
+    word-wrap: break-word;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -93,6 +95,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 /* Sponsors Section */
@@ -100,31 +103,24 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;  /* Provides space between the sponsor logos */
+    gap: 30px;
 }
 
 .sponsor {
     text-align: center;
-    width: 200px; /* Set a width for the sponsor box */
-    flex-shrink: 0;  /* Prevent the sponsor boxes from shrinking */
+    width: 200px; /* Fixed width for sponsor container */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .sponsor img {
-    max-width: 100%;
-    height: auto;  /* Maintain aspect ratio */
-    width: 150px; /* Adjust width of the logos */
-    object-fit: contain; /* Ensure the logo fits the space without distortion */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    width: 150px; /* Fixed size for sponsor logos */
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
-/* Event Details Section */
-#conference-details h2 {
-    font-size: 2.5rem;
-    color: #00d1ff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
+/* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px 0;
@@ -135,27 +131,33 @@ footer {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .header-logo {
-        width: 80px;  /* Adjust logo size for smaller screens */
+        height: 90px; /* Adjust logo size for smaller screens */
     }
 
-    .sponsor {
-        width: 150px; /* Reduce width of sponsor logos */
-    }
-
-    .sponsor img {
-        width: 100px; /* Adjust the size of sponsor images */
+    .header-logos {
+        flex-direction: column; /* Stack logos vertically on smaller screens */
+        top: 10px;
     }
 
     h1 {
-        font-size: 1.8rem; /* Adjust heading size for smaller screens */
+        font-size: 1.8rem; /* Adjust title size */
+        margin-top: 140px; /* Re-align title spacing */
+    }
+
+    .sponsor {
+        width: 150px; /* Reduce width of sponsor boxes */
+    }
+
+    .sponsor img {
+        width: 100px; /* Adjust sponsor logo size */
     }
 
     .section {
-        width: 90%;  /* Ensure sections take up more space on small screens */
-        padding: 30px 10px;  /* Adjust padding */
+        width: 90%; /* Use more horizontal space on small screens */
+        padding: 30px 10px;
     }
 
     h2 {
-        font-size: 2rem;  /* Adjust section headings size */
+        font-size: 2rem; /* Adjust headings for small screens */
     }
 }
