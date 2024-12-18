@@ -10,6 +10,36 @@ body {
     line-height: 1.6;
 }
 
+/* Header Section */
+.header-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-logo {
+    height: 70px; /* Adjust the logo size */
+    object-fit: contain;
+}
+
+.left-logo {
+    width: auto;
+    height: 70px;
+}
+
+.right-logo {
+    width: auto;
+    height: 70px;
+}
+
+/* Highlight Dates */
+.highlighted-date {
+    background-color: #ffeb3b;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+}
+
 /* Countdown Section */
 .countdown-section {
     display: flex;
@@ -27,11 +57,11 @@ body {
 }
 
 .countdown-box {
-    padding: 15px;
-    border: 3px solid #00d1ff;
-    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid #00d1ff;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #00d1ff;
 }
@@ -119,7 +149,7 @@ footer {
     }
 
     .header-logo {
-        height: 90px;
+        height: 70px;
         margin-bottom: 10px; /* Add space between stacked logos */
     }
 
@@ -140,41 +170,4 @@ footer {
     .sponsor {
         width: 150px;
     }
-
-    .sponsor img {
-        width: 100px;
-    }
 }
-
-/* Responsive Design for Small Screens */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; /* Smaller title font size */
-        margin-top: 120px;
-    }
-
-    .section {
-        padding: 20px 10px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p, li {
-        font-size: 1rem; /* Adjust text size */
-    }
-
-    .header-logo {
-        height: 70px;
-    }
-
-    .sponsor {
-        width: 120px;
-    }
-
-    .sponsor img {
-        width: 80px;
-    }
-}
-
