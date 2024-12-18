@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,36 +8,22 @@ body {
     background-color: #121212; /* Fallback color */
     overflow-x: hidden;
     line-height: 1.6;
+    text-align: center; /* Center-align text globally */
 }
 
 /* Header Section */
-.header-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.header-logo {
-    height: 70px; /* Adjust the logo size */
-    object-fit: contain;
-}
-
-.left-logo {
-    width: auto;
-    height: 70px;
-}
-
-.right-logo {
-    width: auto;
-    height: 70px;
+header h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 20px auto;
+    text-align: center; /* Center the title */
+    text-transform: uppercase;
 }
 
 /* Highlight Dates */
 .highlighted-date {
-    background-color: #ffeb3b;
-    padding: 0.2rem 0.4rem;
-    border-radius: 5px;
+    color: #ffeb3b; /* Text-only highlight */
+    font-weight: bold;
 }
 
 /* Countdown Section */
