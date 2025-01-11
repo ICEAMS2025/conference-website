@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function updateCountdown() {
         const now = new Date();
-        const deadline = new Date('2025-01-15');  // Replace with actual submission deadline
+        const deadline = new Date('2025-02-15');  // Replace with actual submission deadline
         const timeRemaining = deadline - now;
         
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
